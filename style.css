@@ -1,0 +1,491 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #D571D3;
+  --night: #03001f;
+  --blue:#4C6DFF;
+}
+
+/* ======================================================= FONT ======================================================= */
+
+
+/* ======================================================= BODY ======================================================= */
+
+body {
+  position: relative;
+  margin: 0;
+  width: 100vw;
+}
+
+body {
+  background-color: var(--night);
+  color: #FFFFFF;
+  font-family: 'Press Start 2P', monospace;
+  line-height: 1.6;
+  max-width: 98vw;
+}
+
+
+/* ======================================================= Titres ======================================================= */
+
+
+h1{
+  text-align: center;
+  margin: 2vw 0 5vw 0;
+}
+
+h1, h2, h3 {
+  color: var(--pink);
+}
+
+/* ======================================================= Autres ======================================================= */
+
+
+.pp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.gestUser-pp {
+  width: 70px;
+  height: 70px;
+}
+
+
+footer{
+  margin: 20vh 0 5vh 0;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline 2px;
+}
+
+.txt-center{
+  display: block;
+  text-align: center;
+}
+
+.retour{
+  display: block;
+  width: 80vw;
+  margin: 5vh auto;
+}
+
+
+/* ======================================================= Header ======================================================= */
+
+.composant-header {
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+}
+
+.retourAccueil img {
+  margin-top: 20px;
+  width: 400px;
+}
+
+.composant-header nav {
+  display: flex;
+  align-items: center;
+}
+
+.composant-header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  max-width: 700px;
+  gap: 2vw;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+}
+
+.composant-header a {
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.composant-header a:hover {
+  text-decoration: underline;
+}
+
+.composant-header li {
+  list-style-type: none;
+}
+
+li .ico-nav{
+  width: 44px;
+}
+
+/* ======================================================= Accueil ======================================================= */
+
+
+.liste-billet{
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.bjr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5vh 1vw;
+}
+
+.bjr p{
+  margin: 0;
+}
+
+/* ======================================================= Profil ======================================================= */
+
+.profil-pp {
+  width: 200px;
+  height: 200px;
+}
+
+.profil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+
+/* ======================================================= Carte Billet ======================================================= */
+
+.billet {
+  width: 60%;
+  max-width: 750px;
+  border: solid var(--pink) 2px;
+  margin:  50px auto ;
+  padding: 20px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.date-publication{
+  font-size: 0.8rem;
+}
+
+
+.admin-button-billet{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+/* ======================================================= Détail ======================================================= */
+
+.contenu{
+  width: 80vw;
+  margin: 2vh auto 10vh auto;
+  border: var(--pink) solid 2px;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.contenu div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenu .date{
+  font-size: 0.8rem;
+  color: var(--blue);
+  margin: 0;
+}
+
+.contenu p{
+  margin-top: 5vh;
+}
+
+.contenu h1{
+  font-size: 1.5rem;
+  margin: 0.83em 0;
+}
+
+.h2-com{
+  font-size: 1.17em;
+  margin: 1em 0;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ======================================================= Commentaire ======================================================= */
+
+.list-com{
+  margin: 5vh 0;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.com-unique {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  align-items: center;
+  margin: 2vh auto;
+
+  padding: 20px;
+  border-radius: 15px;
+  width: 60vw;
+  border: var(--pink) solid 2px;
+}
+
+.top-part-com {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.top-part-com .date{
+  font-size: 0.7rem;
+}
+
+.admin-button-com {
+  margin-left: auto;
+}
+
+.content-com p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: var(--pink); /* Rose pour l'auteur */
+}
+
+/* ======================================================= Form ======================================================= */
+
+form{
+  margin: 7vh auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2vh;
+}
+
+.form_com{
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Inputs */
+input[type="text"], 
+input, 
+input[type="password"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid var(--pink);
+    background-color: #3D2A5A;
+    color: #FFF;
+    font-size: 1.1rem;
+    font-family: 'Press Start 2P', monospace;
+    border-radius: 8px;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+/* Focus */
+input[type="text"]:focus, 
+input:focus, 
+input[type="password"]:focus, 
+input[type="email"]:focus, 
+textarea:focus {
+    border: 2px solid var(--blue);
+    background-color: var(--night);
+    outline: none;
+}
+
+/* Placeholder */
+input::placeholder, 
+textarea::placeholder {
+    color: #a9a9a9;
+}
+
+/* Pour les boutons dans les formulaires */
+input[type="submit"]{
+    background-color: var(--night);
+    color: var(--blue);
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Textarea */
+textarea {
+  font-size: 1rem;
+  resize: none;
+}
+
+
+
+/* ======================================================= Bouton style ======================================================= */
+
+.button-style,
+input[type="submit"],
+input[type="file"]::file-selector-button,
+button {
+  font-family: 'Press Start 2P', monospace;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 44px;
+  max-width: 95vw;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 7px var(--pink);
+  transition: ease 0.5s;
+  z-index: 2;
+  margin: 2vh 5px;
+}
+
+/* Input file */
+input[type="file"]::file-selector-button{
+  font-size: 1rem;
+  margin: 1vh 1vw;
+}
+
+.small-button {
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.centerElem {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.button-style:hover,
+.small-button:hover,
+input[type="submit"]:hover,
+button:hover {
+  text-align: center;
+  color: var(--night);
+  fill:var(--night);
+  background-color: var(--pink);
+  transition: ease 0.5s;
+  transform: scale(1.05);
+}
+
+
+.addPost{
+  background-color: var(--night);
+  font-size: 1rem;
+  width: 170px;
+  bottom: 3vh;
+  margin: 0;
+  margin-right: 2vw;
+}
+
+
+/* ======================================================= Tableau ======================================================= */
+
+table{
+  margin: 5vw;
+  width: 70vw;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.2rem;
+}
+
+table , td, th {
+	border: 1px solid #595959;
+	border-collapse: collapse;
+}
+td, th {
+  padding: 20px 0px ;
+	width: auto;
+	height: auto;
+}
+th {
+	background: #f0e6cc;
+}
+.even {
+	background: #fbf8f0;
+}
+.odd {
+	background: #fefcf9;
+}
+
+
+
+/* ======================================================= A11y ======================================================= */
+
+.skip-link {
+  color: var(--darkRed);
+  padding: 0.625em 0.9375em;
+  text-decoration: none;
+  margin-left: 170px;
+  margin-top: 35px;
+  font-size: 1.1rem;
+}
+
+.skip-link:not(:focus):not(:active) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.skip-link:focus {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
